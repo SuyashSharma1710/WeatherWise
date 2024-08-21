@@ -12,12 +12,23 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'  # Adjust the Node.js version as needed
+
+      - name: Install dependencies
+        run: npm install
+
       - name: Replace API key in JS
         run: |
           sed -i 's/apiKey = "api key";/apiKey = "${{ secrets.API_KEY }}";/g' ./script.js
+
+      - name: Build and Deploy
+        run: npm run build  # If you have a build step, include it here
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./  # Root directory
+          publish_dir: ./  # Adjust the directory if needed
