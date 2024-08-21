@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" id="mainStylesheet" />
+    <link rel="stylesheet" href="responsive.css" media="(max-width:920px)" />
+  </head>
+  <body>
+    <img id="mainbg" src="./assets/pexels-dushenkovsky-4100130.jpg" alt="" />
+    <nav>
+      <img src="./assets/contrast.png" alt="" />
+      <p>WEATHER</p>
+      <p id="cityname">haridwar</p>
+    </nav>
+    <main>
+      <section id="main">
+        <input
+          type="text"
+          name="city"
+          id="city"
+          placeholder="Enter city name"
+        />
+
+        <div id="daydata">
+          <div id="tempweather">
+            <p id="temperature">12.8<span>°</span></p>
+            <p id="weather">rainy day</p>
+            <p id="lon">lon: 33,</p>
+            <p id="lat">lat: 333</p>
+          </div>
+          <div id="otherinfo">
+            <div id="infoitem">
+              <div class="iidiv">
+                <img src="./assets/temperature.png" alt="" />
+                <p>Feels Like</p>
+              </div>
+              <div id="mdata">
+                <p id="feelslike">...</p>
+              </div>
+            </div>
+            <div id="infoitem">
+              <div class="iidiv">
+                <img src="./assets/drop.png" alt="" />
+                <p>Pressure</p>
+              </div>
+              <div id="mdata">
+                <p id="pressure">...</p>
+              </div>
+            </div>
+            <div id="infoitem">
+              <div class="iidiv">
+                <img src="./assets/view.png" alt="" />
+                <p>Visibility</p>
+              </div>
+              <div id="mdata">
+                <p id="visibility">...</p>
+              </div>
+            </div>
+            <div id="infoitem">
+              <div class="iidiv">
+                <img src="./assets/waterdrop.png" alt="" />
+                <p>Humidity</p>
+              </div>
+              <div id="mdata">
+                <p id="humidity">...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="moredetail">
+        <div id="hourly">
+          <div id="nhourly">
+            <img src="./assets/wall-clock.png" alt="" />
+            <p>Hourly Forecast</p>
+          </div>
+          <div id="hourlydatablk">
+            ...
+          </div>
+        </div>
+
+        <div id="tenday">
+          <div id="nhourly">
+            <img src="./assets/calendar.png" alt="" />
+            <p>Week Forecast</p>
+          </div>
+          <div id="dailydatablk">...</div>
+        </div>
+
+        <div id="uvwind">
+          <div id="uvindex">
+            <div id="uvheading">
+              <img src="./assets/uv-index.png" alt="" />
+              <p>UV Index</p>
+            </div>
+            <div id="uvdatadiv">
+              <div id="uvdata">
+                <p id="uvnum">4</p>
+                <p id="uvtype">moderate</p>
+              </div>
+              <img src="./assets/uv.png" alt="" id="uvlogo" />
+            </div>
+          </div>
+
+          <div id="wind">
+            <div id="windheading">
+              <img src="./assets/wind.png" alt="" />
+              <p>Wind</p>
+            </div>
+
+            <div id="wdatablk">
+              <div id="wdatadiv">
+                <div id="wdata1">
+                  <p id="windd">22</p>
+                  <p>MPS <br />Wind</p>
+                </div>
+                <div id="wdata2">
+                  <p id="gustd">22</p>
+                  <p>
+                    MPS <br />
+                    Gust
+                  </p>
+                </div>
+              </div>
+              <img src="./assets/compass.png" id="wlogo" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
