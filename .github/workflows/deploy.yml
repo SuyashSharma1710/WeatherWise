@@ -14,10 +14,10 @@ jobs:
 
       - name: Replace API key in JS
         run: |
-          sed -i 's/apiKey = "api key";/apiKey = "${{ secrets.API_KEY }}";/g' path/to/your/script.js
+          sed -i 's/apiKey = "api key";/apiKey = "${{ secrets.API_KEY }}";/g' ./script.js
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./path-to-build-folder
+          publish_dir: ./
