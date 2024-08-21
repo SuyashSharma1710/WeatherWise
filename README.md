@@ -32,4 +32,4 @@ To run WeatherWise on your local machine, you’ll need:
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/SuyashSharma1710/WeatherWise.git
+   git clone https://github.com/SuyashSharma1710/weatherWise.git

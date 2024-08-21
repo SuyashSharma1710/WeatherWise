@@ -1,9 +1,9 @@
-name: Deploy Weather App
+name: Deploy WeatherWise
 
 on:
   push:
     branches:
-      - main  # Deploys when changes are pushed to the main branch
+      - main
 
 jobs:
   deploy:
@@ -20,4 +20,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./
+          publish_dir: ./  # Root directory
