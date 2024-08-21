@@ -1,5 +1,6 @@
   
-  const apiKey = "api key";
+  // const apiKey = "api key";
+  const apiKey = "ea92aa70665b927dd92729d7b6fe8fd6"; // Your API key
 
   document.getElementById("city").addEventListener("keydown", function (event) {
     if (event.key === "Enter") {
