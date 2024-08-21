@@ -1,0 +1,20 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "**WeatherWise** is a sleek and modern weather application that provides users with real-time weather updates and forecasts. It presents key weather details like temperature, wind, UV index, and a 10-day forecast in an elegant user interface. Designed with a responsive layout, WeatherWise ensures a seamless experience across different screen sizes and devices.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SuyashSharma1710/WeatherWise.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SuyashSharma1710/WeatherWise/issues"
+  },
+  "homepage": "https://github.com/SuyashSharma1710/WeatherWise#readme"
+}
